@@ -12,8 +12,17 @@
  * For more information on configuring datastores, check out:
  * https://sailsjs.com/config/datastores
  */
+let dotenv = require('dotenv');
 
+dotenv.config();
+
+if(process.env.DB_HOST === undefined || process.env.DB_PORT === undefined || process.env.DB_USER === undefined ||
+  process.env.DB_PASS === undefined || process.env.DB_DATABASE === undefined){
+  console.error('Error: You must define a valid .env file');
+  process.exit(1);
+}
 module.exports.datastores = {
+
 
 
   /***************************************************************************
@@ -50,6 +59,12 @@ module.exports.datastores = {
     ***************************************************************************/
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
+    adapter   : 'sails-mysql',
+    host      : process.env.DB_HOST,
+    port      : process.env.DB_PORT,
+    user      : process.env.DB_USER,
+    password  : process.env.DB_PASS,
+    database  : process.env.DB_DATABASE
 
   },
 

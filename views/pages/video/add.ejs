@@ -3,7 +3,11 @@
     <div class="container">
         <br>
           <h1>Ajouter une vidéo</h1>
-          <input type="file" id="avatar" name="avatar">
+          <form action="http://localhost:1337/video/upload" enctype="multipart/form-data" method="post">
+            <input class="form-control-file" type="file" name="video" multiple="multiple">
+            Nom de la vidéo <input class="form-control" type="text" name="name" multiple="multiple">
+            <input class="btn btn-outline-info" type="submit" value="Upload">
+          </form>
     </div>
 
 <!--   <h1>TODO: Implement this page.</h1>
