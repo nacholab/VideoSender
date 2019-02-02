@@ -35,7 +35,7 @@ module.exports.custom = {
   /**************************************************************************
   *                                                                         *
   * The extended length that browsers should retain the session cookie      *
-  * if "Remember Me" was checked while logging in.                          *
+  * if "Se souvenir de moi" was checked while logging in.                          *
   *                                                                         *
   **************************************************************************/
   rememberMeCookieMaxAge: 30*24*60*60*1000, // 30 days
@@ -60,7 +60,7 @@ module.exports.custom = {
 
   // The sender that all outgoing emails will appear to come from.
   fromEmailAddress: 'noreply@example.com',
-  fromName: 'The NEW_APP_NAME Team',
+  fromName: 'The VideoSender Team',
 
   // Email address for receiving support messages & other correspondences.
   internalEmailAddress: 'support+development@example.com',
