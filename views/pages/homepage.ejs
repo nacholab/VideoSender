@@ -1,0 +1,11 @@
+<div id="homepage" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>
+  <div class="hero d-flex flex-column justify-content-center" full-page-hero>
+    <div class="container text-center">
+      <div class="hero-image">
+          <label for="email-address">Nom de l'identifiant vidéo</label>
+          <input class="form-control" id="id_video">
+      </div>
+    </div>
+  </div>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>
