@@ -275,7 +275,7 @@
        * > Originally updated for explicitness, to ensure Vue ≥2.x compatibility,
        * > and to change default usage to always preserve decimal accuracy.  It
        * > could likely wind up with additional updates over time.
-       * > All edits are MIT licensed. Copyright (c) Mike McNeil, 2018-present
+       * > All edits are MIT licensed. Copyright (c) Mike McNeil, 2019-present
        */
       def.filters.round = function (value, accuracy, chopTrailingZeros) {
         if (typeof value !== 'number') {

@@ -1,10 +1,10 @@
 /*!
  * Vue.js v2.5.17
- * (c) 2014-2018 Evan You
+ * (c) 2014-2019 Evan You
  * Released under the MIT License.
  *
  * > w/ slight modifications for easier default handling of dev vs. prod logging
- * > Modifications (c) 2018-present Mike McNeil, MIT License)
+ * > Modifications (c) 2019-present Mike McNeil, MIT License)
  * > (To see modifications in isolation, run a diff versus vanilla Vue.js)
  */
 (function (global, factory) {

@@ -87,7 +87,7 @@ and exposed as \`req.me\`.)`
     await sails.helpers.passwords.checkPassword(inputs.password, userRecord.password)
     .intercept('incorrect', 'badCombo');
 
-    // If "Remember Me" was enabled, then keep the session alive for
+    // If "Se souvenir de moi" was enabled, then keep the session alive for
     // a longer amount of time.  (This causes an updated "Set Cookie"
     // response header to be sent as the result of this request -- thus
     // we must be dealing with a traditional HTTP request in order for

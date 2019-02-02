@@ -1,6 +1,6 @@
 /*!
   * Bootstrap v4.1.3 (https://getbootstrap.com/)
-  * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
@@ -3083,7 +3083,7 @@
     var useHeight = ['right', 'left'].indexOf(basePlacement) !== -1;
 
     // Split the offset string to obtain a list of values and operands
-    // The regex addresses values with the plus or minus sign in front (+10, -20, etc)
+    // The regex addresses values with the plus or minus Se connecter front (+10, -20, etc)
     var fragments = offset.split(/(\+|\-)/).map(function (frag) {
       return frag.trim();
     });
