@@ -4,7 +4,7 @@ module.exports = {
   friendlyName: 'Signup',
 
 
-  description: 'Sign up for a new user account.',
+  description: 'S'inscrire for a new user account.',
 
 
   extendedDescription:
