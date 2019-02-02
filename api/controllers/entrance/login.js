@@ -4,7 +4,7 @@ module.exports = {
   friendlyName: 'Login',
 
 
-  description: 'Log in using the provided email and password combination.',
+  description: 'Se connecter using the provided email and password combination.',
 
 
   extendedDescription:

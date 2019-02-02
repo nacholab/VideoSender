@@ -1,7 +1,7 @@
 /**
  * User.js
  *
- * A user who can log in to this application.
+ * A user who can Se connecter to this application.
  */
 
 module.exports = {
@@ -60,7 +60,7 @@ email status until they click the link in the confirmation email.`
       type: 'boolean',
       description: 'Whether this user is a "super admin" with extra permissions, etc.',
       extendedDescription:
-`Super admins might have extra permissions, see a different default home page when they log in,
+`Super admins might have extra permissions, see a different default home page when they Se connecter,
 or even have a completely different feature set from normal users.  In this app, the \`isSuperAdmin\`
 flag is just here as a simple way to represent two different kinds of users.  Usually, it's a good idea
 to keep the data model as simple as possible, only adding attributes when you actually need them for
