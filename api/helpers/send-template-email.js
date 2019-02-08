@@ -189,7 +189,7 @@ module.exports = {
           'To resolve these configuration issues, add the missing config variables to\n'+
           '\`config/custom.js\`-- or in staging/production, set them up as system\n'+
           'environment vars.  (If you don\'t have a Mailgun domain or secret, you can\n'+
-          'S'inscrire for free at https://mailgun.com to receive sandbox credentials.)\n'+
+      //    'S'inscrire for free at https://mailgun.com to receive sandbox credentials.)\n'+
           '\n'+
           '> Note that, for convenience during development, there is another alternative:\n'+
           '> In lieu of setting up real Mailgun credentials, you can "fake" email\n'+

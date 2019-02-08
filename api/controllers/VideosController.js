@@ -7,18 +7,24 @@ module.exports = {
               saveAs: req.param('name')
             },function (err, uploadedFiles) {
               if (err) return res.serverError(err);
-
-              var newNameVideo = req.param('name');
-              var newPathVideo = require('path').resolve(sails.config.appPath, 'video/') + newNameVideo;
-              var newVideoRecord = Video.create(Object.assign({
-                name: newNameVideo,
-                path: newPathVideo
-                  }, ))
-              .fetch();
-              return res.json({
+              /*return res.json({
                 message: uploadedFiles.length + ' file(s) uploaded successfully!'
-              });
-            }); 
+              });*/
+              return true;
+            });
+
+            
+            var newNameVideo = req.param('name');
+            var newPathVideo = require('path').resolve(sails.config.appPath, 'video/') + newNameVideo;
+            await Video.create(Object.assign({
+              name: newNameVideo,
+              path: newPathVideo
+                }, ))
+            .fetch();
+
+            return res.json({
+              message: 'file(s) uploaded successfully!'
+            });
     }
     
 };

@@ -31,7 +31,9 @@ module.exports.routes = {
   'GET /account/password':   { action: 'account/view-edit-password' },
   'GET /account/profile':    { action: 'account/view-edit-profile' },
   'GET /video/add'      :    { action: 'video/view-add-video' },
+  'GET /video/view'     :    { action: 'video/view-view' },
   'POST /video/upload'  :    'Videos.uploads',
+  'GET /video/play'     :    'Videodownload.download',
 
 
   //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗

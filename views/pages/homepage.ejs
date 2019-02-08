@@ -2,8 +2,11 @@
   <div class="hero d-flex flex-column justify-content-center" full-page-hero>
     <div class="container text-center">
       <div class="hero-image">
-          <label for="email-address">Nom de l'identifiant vidéo</label>
-          <input class="form-control" id="id_video">
+          <form action="/video/view" method="get">
+            <label for="email-address">Nom de l'identifiant vidéo</label>
+            <input class="form-control" name="video" id="id_video">
+            <input class="btn btn-outline-info" type="submit" value="Voir la video">
+          </form>
       </div>
     </div>
   </div>
