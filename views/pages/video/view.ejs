@@ -1,0 +1,14 @@
+<div id="view" v-cloak>
+
+    <video width="400" controls>
+        <source src="/video/play?video=<%= video_name %>" type="video/mp4">
+        <source src="/video/play?video=<%= video_name %>" type="video">
+        Your browser does not support HTML5 video.
+      </video>
+      
+      <p>
+      </p>
+</div>
+
+<%= video_name %>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
