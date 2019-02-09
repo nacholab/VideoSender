@@ -1,17 +1,24 @@
 <div id="view" v-cloak>
-
+  <div class="hero d-flex flex-column justify-content-center" full-page-hero>
     <div class="container text-center">
-            <h1 class="display-1 mb-3"><%= video_title %></h1>
-
-            <video width="720" height="405" controls>
-                    <source src="/video/play?video=<%= video_name %>" type="video/mp4">
-                    </video>
+      <div class="hero-image">
+        <h2 style="margin: 1em;"><%= video_title %></h2>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video width="full" height="full" controls>
+                  <source src="/video/play?video=<%= video_name %>" type="video/mp4">
+                  </video>
+        </div>
+      </div>
+      <div class="row"  style="
+    margin: 2em;
+    display: flex;
+    justify-content: center;">
+        <div class="col-6-sm">
+          <a class="btn btn-outline-info" href="/video/play?video=<%= video_name %>"download="<%= video_name %>" role="button">Télécharger</a>
+        </div>
+      </div>
     </div>
-      
-    <a href="/video/play?video=<%= video_name %>"
-          download="<%= video_name %>">Télécharger la video</a>
-     
+  </div>
 </div>
 
-<%= video_name %>
 <%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
