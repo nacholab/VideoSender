@@ -1,3 +1,11 @@
+let fs = require('fs');
+let dotenv = require('dotenv');
+
+dotenv.config();
+
+if(process.env.PATH_FILE === undefined ){
+  console.error('Le path des fichiers n\'est pas spécifié');
+}
 module.exports = {
 
 
@@ -18,8 +26,10 @@ module.exports = {
 
 
   fn: async function () {
+    let path = process.env.PATH_FILE;
+    var files = fs.readdirSync(path);
 
-    return {};
+    return {list_video: files};
 
   }
 

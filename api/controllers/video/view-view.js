@@ -52,7 +52,7 @@ module.exports = {
     if (video_name == ""){
       return exits.notFound();
     }
-   return exits.success({value: true, video_name: video_name});
+   return exits.success({value: true, video_name: video_name, video_title: video_name.replace(/\.[^/.]+$/, "")});
   }
 
 
