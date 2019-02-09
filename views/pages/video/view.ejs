@@ -1,14 +1,12 @@
 <div id="view" v-cloak>
-
-    <video width="400" controls>
-        <source src="/video/play?video=<%= video_name %>" type="video/mp4">
-        <source src="/video/play?video=<%= video_name %>" type="video">
-        Your browser does not support HTML5 video.
-      </video>
       
      
           <a href="/video/play?video=<%= video_name %>"
           download="<%= video_name %>">Télécharger la video</a>
+
+          <video width="720" height="405" controls>
+            <source src="/video/play?video=<%= video_name %>" type="video/mp4">
+            </video>
      
 </div>
 
